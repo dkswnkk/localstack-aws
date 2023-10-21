@@ -18,6 +18,15 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	testImplementation "org.testcontainers:testcontainers:1.19.0"
+	implementation(platform("software.amazon.awssdk:bom:2.20.136"))
+	implementation("commons-io:commons-io:2.13.0")
+	implementation("software.amazon.awssdk:aws-core")
+	implementation("software.amazon.awssdk:sdk-core")
+	implementation("software.amazon.awssdk:sts")
+	implementation("software.amazon.awssdk:s3")
+	testImplementation("org.testcontainers:localstack:1.19.0")
 }
 
 tasks.named('test') {

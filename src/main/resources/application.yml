@@ -1,0 +1,3 @@
+cloud:
+  aws:
+    endpoint: localhost:4566
